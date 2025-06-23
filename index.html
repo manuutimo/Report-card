@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Report Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="number"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .submit-btn {
+            margin-top: 20px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>Student Report Form</h2>
+
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" name="studentName" required>
+
+    <label for="studentID">Student ID:</label>
+    <input type="text" id="studentID" name="studentID" required>
+
+    <label for="class">Class/Grade:</label>
+    <input type="text" id="class" name="class" required>
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject">
+
+    <label for="marks">Marks Obtained:</label>
+    <input type="number" id="marks" name="marks" min="0" max="100">
+
+    <label for="grade">Grade:</label>
+    <select id="grade" name="grade">
+        <option value="">--Select Grade--</option>
+        <option>A+</option>
+        <option>A</option>
+        <option>B+</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+        <option>F</option>
+    </select>
+
+    <label for="teacherComments">Teacher's Comments:</label>
+    <textarea id="teacherComments" name="teacherComments" rows="4"></textarea>
+
+    <label for="attendance">Attendance (%):</label>
+    <input type="number" id="attendance" name="attendance" min="0" max="100">
+
+    <div class="submit-btn">
+        <input type="submit" value="Submit Report">
+    </div>
+</form>
+
+</body>
+</html>
